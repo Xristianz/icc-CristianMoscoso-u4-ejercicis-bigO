@@ -1,5 +1,5 @@
 package main.ejercicio2;
-
+import java.util.HashSet;
 public class AlgoritmosInoptimos {
 
     // 1. Buscar duplicados en un arreglo (ineficiente)
@@ -15,6 +15,7 @@ public class AlgoritmosInoptimos {
 
     // 2. Contar elementos mayores que X usando dos bucles
     public static int contarMayores(int[] arr, int x) {
+        HashSet <Integer> mayoresant = new HashSet<>();
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
             boolean esMayor = true;
